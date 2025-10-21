@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashley Soto | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+      }
+
+      body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .card-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-gradient {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        transition: all 0.3s ease;
+      }
+
+      .btn-gradient:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+      }
+
+      .section-title {
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 2px;
+      }
+
+      .tag-skill {
+        background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+        border: 1px solid rgba(102, 126, 234, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .tag-skill:hover {
+        background: linear-gradient(135deg, #667eea25 0%, #764ba225 100%);
+        border-color: rgba(102, 126, 234, 0.6);
+      }
+
+      .resume-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeInUp 0.6s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header Section -->
+    <header
+      class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden"
+    >
+      <!-- Decorative Elements -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-0 left-1/4 w-96 h-96 bg-purple-500 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-4 py-16 md:py-24">
+        <div class="text-center">
+          <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">
+            Ashley Soto
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-300 mb-2">
+            Political Science | University of Connecticut
+          </p>
+          <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+            Passionate about policy analysis, civic engagement, and international relations
+          </p>
+
+          <!-- Contact Info -->
+          <div class="flex flex-wrap justify-center gap-4 md:gap-6 mt-8">
+            <a
+              href="mailto:Ashley.soto@uconn.edu"
+              class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            >
+              <i class="fas fa-envelope"></i>
+              <span class="hidden sm:inline">Email</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ashley--soto"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            >
+              <i class="fab fa-linkedin"></i>
+              <span class="hidden sm:inline">LinkedIn</span>
+            </a>
+            <div
+              class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10"
+            >
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="hidden sm:inline">Connecticut</span>
+            </div>
+            <div
+              class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10"
+            >
+              <i class="fas fa-phone"></i>
+              <span class="hidden sm:inline">(860) 879-4152</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-16 md:py-24 space-y-20">
+      <!-- Resume Section -->
+      <section id="resume" class="scroll-mt-20">
+        <div class="mb-12">
+          <h2 class="text-4xl font-bold text-center mb-2 section-title">
+            Resume
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 items-center mb-12">
+          <div
+            class="md:col-span-2 resume-container bg-white rounded-xl shadow-lg overflow-hidden"
+          >
+            <!-- PDF Embed Viewer -->
+            <iframe
+              src="Soto_Ashley_Resume.pdf#toolbar=1&navpanes=0&scrollbar=1"
+              type="application/pdf"
+              class="w-full h-96 md:h-screen"
+              title="Ashley Soto Resume"
+            ></iframe>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="bg-white p-6 rounded-xl shadow-lg card-hover border border-gray-200"
+            >
+              <h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+                <i class="fas fa-file text-blue-600"></i>
+                Resume
+              </h3>
+              <a
+                href="Soto_Ashley_Resume.pdf"
+                download="Ashley_Soto_Resume.pdf"
+                class="btn-gradient w-full py-3 px-4 rounded-lg text-white font-semibold flex items-center justify-center gap-2 hover:text-white"
+              >
+                <i class="fas fa-download"></i>
+                Download PDF
+              </a>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200"
+            >
+              <p class="text-sm text-gray-700">
+                <i class="fas fa-info-circle text-blue-600 mr-2"></i>
+                <strong>Tip:</strong> Download to view the complete resume with
+                full formatting and details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="scroll-mt-20">
+        <div class="mb-12">
+          <h2 class="text-4xl font-bold text-center mb-2 section-title">
+            Education
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fas fa-graduation-cap text-white text-lg"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-gray-900 mb-1">
+                  University of Connecticut
+                </h3>
+                <p class="text-purple-600 font-semibold mb-3">
+                  Bachelor of Arts in Political Science
+                </p>
+                <p class="text-gray-600 mb-2">
+                  Expected Graduation: <strong>May 2026</strong>
+                </p>
+                <p class="text-gray-600 text-sm mb-2">
+                  <strong>GPA:</strong> 3.5/4.0 | <strong>Major GPA:</strong> 3.9/4.0
+                </p>
+                <p class="text-gray-600 text-sm">
+                  <strong>Honors:</strong> Honors Program, Special Program in Law (SpinL)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="scroll-mt-20">
+        <div class="mb-12">
+          <h2 class="text-4xl font-bold text-center mb-2 section-title">
+            Professional Experience
+          </h2>
+          <p class="text-center text-gray-600 mt-4">
+            Policy research, government affairs, and international relations
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Project 1: Congressional Experience -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-200 group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fas fa-landmark text-white text-6xl opacity-20"></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold text-blue-600"
+              >
+                Government Affairs
+              </div>
+            </div>
+            <div class="p-8">
+              <h3
+                class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors"
+              >
+                Legislative Intern
+              </h3>
+              <p class="text-blue-600 font-semibold mb-4">
+                Office of Congresswoman Rosa L. DeLauro
+              </p>
+              <p class="text-gray-500 text-sm mb-4">
+                U.S. House of Representatives, Washington, D.C. | Jan 2025 – Apr 2025
+              </p>
+
+              <ul class="space-y-3 mb-6">
+                <li class="flex gap-3 text-gray-700">
+                  <span class="text-blue-500 font-bold flex-shrink-0">•</span>
+                  <span
+                    >Crafted detailed summaries of congressional hearings and briefings to equip legislative staff with accurate information for policy decision-making</span
+                  >
+                </li>
+                <li class="flex gap-3 text-gray-700">
+                  <span class="text-blue-500 font-bold flex-shrink-0">•</span>
+                  <span
+                    >Managed hundreds of constituent communications daily by answering calls and batching messages by topic for efficient follow-up</span
+                  >
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="tag-skill text-sm px-3 py-1 rounded-full text-blue-700 font-medium"
+                  >Policy Analysis</span
+                >
+                <span
+                  class="tag-skill text-sm px-3 py-1 rounded-full text-blue-700 font-medium"
+                  >Legislative Research</span
+                >
+                <span
+                  class="tag-skill text-sm px-3 py-1 rounded-full text-blue-700 font-medium"
+                  >Government Affairs</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: International Affairs -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-200 group"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-red-500 via-orange-500 to-amber-400 relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="fas fa-globe text-white text-6xl opacity-20"></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold text-red-600"
+              >
+                International Relations
+              </div>
+            </div>
+            <div class="p-8">
+              <h3
+                class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors"
+              >
+                Consular Intern
+              </h3>
+              <p class="text-red-600 font-semibold mb-4">
+                The Consulate General of Peru
+              </p>
+              <p class="text-gray-500 text-sm mb-4">
+                Hartford, CT | Jun 2025 – Present
+              </p>
+
+              <ul class="space-y-3 mb-6">
+                <li class="flex gap-3 text-gray-700">
+                  <span class="text-red-500 font-bold flex-shrink-0">•</span>
+                  <span
+                    >Facilitate preparation and processing of official documents including passports, citizenship applications, and visa applications</span
+                  >
+                </li>
+                <li class="flex gap-3 text-gray-700">
+                  <span class="text-red-500 font-bold flex-shrink-0">•</span>
+                  <span
+                    >Managed client information in Excel and promoted Peruvian cultural identity through community events and social media engagement</span
+                  >
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="tag-skill text-sm px-3 py-1 rounded-full text-red-700 font-medium"
+                  >International Affairs</span
+                >
+                <span
+                  class="tag-skill text-sm px-3 py-1 rounded-full text-red-700 font-medium"
+                  >Documentation</span
+                >
+                <span
+                  class="tag-skill text-sm px-3 py-1 rounded-full text-red-700 font-medium"
+                  >Community Engagement</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="scroll-mt-20">
+        <div class="mb-12">
+          <h2 class="text-4xl font-bold text-center mb-2 section-title">
+            Work Experience
+          </h2>
+        </div>
+
+        <div class="space-y-6">
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">Student Administrative Trainee</h3>
+                <p class="text-blue-600 font-semibold">
+                  Department of Political Science
+                </p>
+              </div>
+              <span
+                class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full"
+                >Sep 2025 – Present</span
+              >
+            </div>
+            <p class="text-gray-600 text-sm mb-3">University of Connecticut, Storrs, CT</p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Recorded and analyzed student, alumni, and community data using Excel and LinkedIn, improving engagement and streamlining departmental operations</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Managed departmental communications and outreach by maintaining websites, updating mentorship databases, and overseeing social media content</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  Consular Intern
+                </h3>
+                <p class="text-blue-600 font-semibold">The Consulate General of Peru</p>
+              </div>
+              <span
+                class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full"
+                >Jun 2025 – Present</span
+              >
+            </div>
+            <p class="text-gray-600 text-sm mb-3">Hartford, CT</p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Facilitate preparation and processing of official documents such as passports, citizenship applications, national IDs, and visa applications</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Managed client information in Excel and promoted Peruvian cultural identity through community events and social media engagement</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  Legislative Intern
+                </h3>
+                <p class="text-blue-600 font-semibold">Office of Congresswoman Rosa L. DeLauro</p>
+              </div>
+              <span
+                class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full"
+                >Jan 2025 – Apr 2025</span
+              >
+            </div>
+            <p class="text-gray-600 text-sm mb-3">U.S. House of Representatives, Washington, D.C.</p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Crafted detailed summaries of congressional hearings and briefings to equip legislative staff with accurate information for policy decision-making</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Managed hundreds of constituent communications daily by answering calls and batching messages by topic for organized and efficient follow-up</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  Analyst Intern
+                </h3>
+                <p class="text-blue-600 font-semibold">East Motor LLC</p>
+              </div>
+              <span
+                class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full"
+                >Jun 2021 – Aug 2023</span
+              >
+            </div>
+            <p class="text-gray-600 text-sm mb-3">Willimantic, CT</p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Assisted in preparation and finalization of business documents, including bills of sale, titles, and warranties for equipment transportation, ensuring compliance with international trade regulations</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Translated contracts and agreements between English and Spanish to support accurate communication in global machinery transactions</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Conducted market research on high-demand machinery in the Peruvian heavy equipment sector to inform strategic sales and procurement decisions</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  Research Assistant
+                </h3>
+                <p class="text-blue-600 font-semibold">Political Science Honors Bennett Research Assistant Program</p>
+              </div>
+              <span
+                class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full"
+                >Sep 2022 – Dec 2022</span
+              >
+            </div>
+            <p class="text-gray-600 text-sm mb-3">University of Connecticut, Storrs, CT</p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Assessed and synthesized research on coal tar sanctions for Dr. Kimberly Bergendahl, formatting findings in Microsoft Word for clarity and professional presentation</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-blue-500">✓</span>
+                <span
+                  >Tracked and maintained state-by-state data, regularly updating folders and collecting information on local representatives to enhance research accuracy</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership & Activities Section -->
+      <section id="leadership" class="scroll-mt-20">
+        <div class="mb-12">
+          <h2 class="text-4xl font-bold text-center mb-2 section-title">
+            Leadership & Engagement
+          </h2>
+        </div>
+
+        <div class="space-y-6">
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">Co-Social Media Chair & Tri-Alpha Liaison</h3>
+                <p class="text-green-600 font-semibold">
+                  First Generation Student Society
+                </p>
+              </div>
+              <span
+                class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full"
+                >Sep 2023 – Present</span
+              >
+            </div>
+            <p class="text-gray-600 text-sm mb-3">University of Connecticut, Storrs, CT</p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex gap-3">
+                <span class="text-green-500">✓</span>
+                <span
+                  >Manage and lead events that support first-generation college students by sharing resources, peer guidance, and personal experiences</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-green-500">✓</span>
+                <span
+                  >Collaborate with campus organizations to host joint programs that promote student engagement and community building</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="scroll-mt-20">
+        <div class="mb-12">
+          <h2 class="text-4xl font-bold text-center mb-2 section-title">
+            Skills & Expertise
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Languages -->
+          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+            <h3
+              class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2"
+            >
+              <i class="fas fa-globe text-blue-600"></i>
+              Languages
+            </h3>
+            <div class="space-y-3">
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Spanish <span class="text-gray-500">(Native)</span>
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Korean <span class="text-gray-500">(Elementary)</span>
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Mandarin <span class="text-gray-500">(Elementary)</span>
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                German <span class="text-gray-500">(Elementary)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+            <h3
+              class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2"
+            >
+              <i class="fas fa-laptop-code text-purple-600"></i>
+              Technical Skills
+            </h3>
+            <div class="space-y-3">
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Microsoft Office
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Aurora
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                RStudio
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Canva
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Cap Cut
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Skills -->
+          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+            <h3
+              class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2"
+            >
+              <i class="fas fa-briefcase text-orange-600"></i>
+              Professional Skills
+            </h3>
+            <div class="space-y-3">
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Policy Analysis
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Legislative Research
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Data Analysis
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Communication
+              </div>
+              <div
+                class="tag-skill px-4 py-2 rounded-lg font-semibold text-gray-700"
+              >
+                Civic Engagement
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-12"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h4 class="font-bold text-lg mb-4">Ashley Soto</h4>
+            <p class="text-gray-400">Political Science | University of Connecticut</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#resume" class="hover:text-white transition-colors"
+                  >Resume</a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="hover:text-white transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="hover:text-white transition-colors"
+                  >Skills</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Connect</h4>
+            <div class="flex gap-4">
+              <a
+                href="mailto:briannacis90@hotmail.com"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="fas fa-envelope text-xl"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/brianna-soto-142073377"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+              <a
+                href="https://github.com/BriannaSoto07"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="fab fa-github text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm"
+        >
+          <p>
+            &copy; 2025 Brianna Soto. All rights reserved. | Built with
+            <span class="text-red-500">♥</span> using modern web technologies
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
